@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Expense Tracker',
-      theme: ThemeData(fontFamily: "font-regular", brightness: Brightness.dark),
+      theme: ThemeData(
+        fontFamily: "font-regular",
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: Color(0xffF9F9F9),
+      ),
       home: const OnboardingScreen(),
     );
   }
