@@ -1,25 +1,24 @@
 # 📊 Expense Tracker
 
-**SpendSmart – Your Ultimate Expense Tracking Platform**  
+**Expense Tracker – Your Ultimate Expense Tracking Platform**  
 
 Easily track your income and expenses, gain valuable financial insights, and stay in control of your budget — all in one simple app.
 
 ---
 
 ## 🚀 Getting Started
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=flat&logo=android)](../../actions) 
+To get started with the project, clone the repository and run it locally:
 
-This project is a starting point for a Flutter application.
+```bash
+git clone https://github.com/asadeee-web/expense_tracker.git
+cd expense_tracker
+flutter pub get
+flutter run
 
-A few resources to help you get started with Flutter development:
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)  
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)  
-
-For help getting started with Flutter development, view the [online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on mobile development, and a full API reference.
-
----
-
-## 📱 Mockup Preview
+## 📱 Preview
 
 Here’s a sneak peek of the app design:
 
@@ -39,6 +38,7 @@ Here’s a sneak peek of the app design:
 ## 🛠️ Tech Stack
 
 - **Flutter** (Frontend)  
+- **Hive** (Local Storage)  
 - **Provider** (State Management)  
 - **Dart** (Programming Language)  
 
@@ -50,6 +50,4 @@ Contributions are welcome! Feel free to fork this repo and submit a PR.
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
