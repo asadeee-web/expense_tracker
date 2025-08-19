@@ -1,5 +1,7 @@
+import 'package:expense_tracker/core/utils/colors.dart';
 import 'package:expense_tracker/core/utils/textStyle.dart';
 import 'package:expense_tracker/features/home/home_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/utils.dart';
@@ -44,7 +46,7 @@ class OnboardingScreen extends StatelessWidget {
               },
               textColor: Colors.white,
 
-              backgroundColor: Color(0xff1C3B8C),
+              backgroundColor: AppColors.primaryColor,
               fontSize: 16,
               borderRadius: 10,
               elevation: 0,

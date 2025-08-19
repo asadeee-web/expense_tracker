@@ -1,9 +1,14 @@
+import 'package:expense_tracker/features/home/home_view_model.dart';
 import 'package:expense_tracker/features/onbaording/onboarding_screen.dart';
-import 'package:expense_tracker/features/root/root_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
   runApp(const MyApp());
 }
 
@@ -12,14 +17,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Expense Tracker',
-      theme: ThemeData(
-        fontFamily: "font-regular",
-        brightness: Brightness.light,
-        scaffoldBackgroundColor: Color(0xffF9F9F9),
+    return MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => HomeViewModel())],
+      child: GetMaterialApp(
+        title: 'Expense Tracker',
+        theme: ThemeData(
+          fontFamily: "font-regular",
+          brightness: Brightness.light,
+          scaffoldBackgroundColor: Color(0xffF9F9F9),
+        ),
+        home: const OnboardingScreen(),
       ),
-      home: const OnboardingScreen(),
     );
   }
 }
