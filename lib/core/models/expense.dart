@@ -4,7 +4,7 @@ class Expense {
   final String id;
   final String title;
   final double amount;
-  final String note;
+  //  final String note;
   //final Icon tag;
   final DateTime dueDate;
   final String transType;
@@ -16,7 +16,7 @@ class Expense {
     required this.amount,
     required this.dueDate,
     required this.transType,
-    required this.note,
+    //required this.note,
     // required this.tag,
     // this.isPaid = false,
   });
@@ -29,7 +29,7 @@ class Expense {
       'amount': amount,
       'dueDate': dueDate.toIso8601String(),
       'transType': transType,
-      'note': note,
+      // 'note': note,
       //  "tag": tag,
       // 'isPaid': isPaid,
     };
@@ -40,7 +40,7 @@ class Expense {
       id: map['id'],
       title: map['title'],
       amount: map['amount'],
-      note: map['note'],
+      //note: map['note'],
       dueDate: DateTime.parse(map['dueDate']),
       transType: map['transType'],
       // tag: map['tag'],

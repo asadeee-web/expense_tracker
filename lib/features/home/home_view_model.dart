@@ -32,7 +32,7 @@ class HomeViewModel extends ChangeNotifier {
   TextEditingController titleController = TextEditingController();
   TextEditingController amountController = TextEditingController();
   TextEditingController transTypeController = TextEditingController();
-  TextEditingController noteController = TextEditingController();
+  //TextEditingController noteController = TextEditingController();
 
   Future<void> loadExpenses() async {
     _loader = true;
@@ -58,7 +58,7 @@ class HomeViewModel extends ChangeNotifier {
       title: titleController.text,
       amount: amountParsed,
       transType: transTypeController.text,
-      note: noteController.text,
+      // note: noteController.text,
       dueDate: DateTime.now(),
     );
 
@@ -91,7 +91,7 @@ class HomeViewModel extends ChangeNotifier {
   void clearControllers() {
     titleController.clear();
     amountController.clear();
-    noteController.clear();
+    // noteController.clear();
     transTypeController.clear();
     notifyListeners();
   }

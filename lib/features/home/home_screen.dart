@@ -165,13 +165,13 @@ class HomeScreen extends StatelessWidget {
                 return DropdownMenuItem(value: e, child: Text(e));
               }).toList(),
             ),
-            SizedBox(height: 10),
+            // SizedBox(height: 10),
 
-            // Note TextField
-            TextField(
-              controller: model.noteController,
-              decoration: InputDecoration(labelText: "Note"),
-            ),
+            // // Note TextField
+            // TextField(
+            //   controller: model.noteController,
+            //   decoration: InputDecoration(labelText: "Note"),
+            // ),
             SizedBox(height: 20),
 
             // Save Button
@@ -179,7 +179,7 @@ class HomeScreen extends StatelessWidget {
               label: "Save",
               width: double.infinity,
               onPressed: () {
-                model.addTransaction(); // Call to add the transaction
+                model.addTransaction();
               },
               textColor: Colors.white,
               backgroundColor: AppColors.primaryColor,
